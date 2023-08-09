@@ -1,128 +1,28 @@
 import React from 'react';
-import { CheckIcon } from '@heroicons/react/outline';
-
+import about from '../assets/About.png';
 const HomeSection4 = () => {
-  return (
-    <div name='platforms' className='w-full my-32'>
-      <div className='max-w-[1240px] mx-auto px-2'>
-      <h2 className='text-5xl font-bold text-center'>All-In-One Platform</h2>
-        <p className='text-2xl py-8 text-gray-500 text-center'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis,
-          ab. Officia sunt nulla aspernatur culpa, eaque tenetur excepturi
-          nostrum tempore.
-        </p>
+    return (
+        <div name='platforms' className='w-full my-32'>
+            <div className='max-w-[1240px] mx-auto px-2 flex flex-col-reverse lg:flex-row'>
 
-        <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4'>
+                <div className='w-full lg:w-1/2 lg:pr-8'>
+                    <h2 className='text-5xl font-bold text-center lg:text-left'><span className='text-green-500'>SAAS </span>ESTIMATION</h2>
+                    <p className='text-2xl py-8 text-gray-500 text-center lg:text-left'>
+                        An innovative web platform that simplifies the process of calculating and estimating the costs of AWS services used.
+                    <br/>
+                        By providing a user-friendly and intuitive interface, users can easily input the details of their cloud configurations, such as instances, storage, bandwidth, and more.                    </p>
 
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
-          <div className='flex'>
-            <div>
-              <CheckIcon className='w-7 mr-4 text-green-600' />
-            </div>
-            <div>
-              <h3 className='font-bold text-lg'>Notifications</h3>
-              <p className='text-lg pt-2 pb-4'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Asperiores maxime deserunt voluptatibus consequatur similique
-                voluptates!
-              </p>
-            </div>
-          </div>
 
+
+                </div>
+
+                <div className='w-full lg:w-1/2 lg:pl-8'>
+                    <img src={about} className='h-auto w-full' alt={"about"} />
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+
+    );
 };
 
 export default HomeSection4;
